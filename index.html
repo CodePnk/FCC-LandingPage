@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tide Power Pods</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="header" class="header">
+        <nav id="nav-bar" class="nav-bar nav-flex-row">
+            <img id="header-img"
+                src="https://res.cloudinary.com/dpbk7yule/image/upload/v1583066990/Tide_Logo_RGB_2014_awyzjs.webp"
+                alt="tide-logo"
+            />
+            <ul class="nav-flex-row">
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href="#howitworks">How it Works</a></li>
+                <li><a class="nav-link"href="#signup">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <h1>Tide Power Pods</h1>
+
+        <section class="first-section">
+            <h2 class="section-head" id="features">Features</h2>
+            <ul class="features">
+                <li class="features-flex-row">
+                    <img src="clean.png" class="features-img">
+                    <p class="features-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </li>
+                <li class="features-flex-row">
+                    <img src="load.png" class="features-img">
+                    <p class="features-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
+                </li>
+                <li class="features-flex-row">
+                    <img src="scent.png" class="features-img">
+                    <p class="features-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-head" id="howitworks">How it works!</h2>
+            <div class="video-container">
+                <iframe id="video" width="560" height="315" middle src="https://www.youtube.com/embed/LEN5c7YTtOI" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section class="third-section">
+            <h2 class="section-head" id="signup">Join the Laundry Revolution</h2>
+            <form id="form" class="form" action="https://www.freecodecamp.com/email-submit" method="post">
+                <div class="form-div">
+                    <input class="email" id="email" type="email" name="email" placeholder="Enter your Email" required>
+                    <input id="submit" class="button" type="submit" value="Join Us!">
+                </div>
+            </form>
+        </section>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>

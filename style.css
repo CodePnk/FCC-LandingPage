@@ -1,0 +1,167 @@
+body {
+    font-size: 16px;
+    margin: 0px auto;
+    font-family: "Anton";
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+section {
+    overflow-x: hidden;
+    padding: 40px;
+}
+
+/* Anchor link fix due to fixed nav */
+h2::before { 
+    display: block; 
+    content: " ";
+    /*  -50px = height of the header + distance between top of h1's to top of parent section. Adjust as needed for you */
+    margin-top: -50px; 
+    height: 138px; 
+    visibility: hidden; 
+    pointer-events: none;
+  }
+
+/* FlexBox Styles */
+.nav-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.features-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Header Styles */
+/* Keeps header at top of view port on scroll */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgb(255,168,76); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(255,168,76,1) 0%, rgba(255,123,13,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(255,168,76,1) 0%,rgba(255,123,13,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(255,168,76,1) 0%,rgba(255,123,13,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=0 ); /* IE6-9 */
+}
+
+#header-img {
+    height: 5rem;
+    margin-left: 3rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.nav-link {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0.8rem;
+    text-decoration: none;
+    color: #164F9E;
+    text-shadow: #fff 2px 2px;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+    color: rgba(22, 69, 158, .5);
+    text-shadow:  rgba(255, 255, 255, .5) 2px 2px;
+}
+
+.main {
+    padding-top: 123px;
+    width: 100%;
+    background: rgb(44,83,158); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(44,83,158,1) 0%, rgba(44,83,158,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(44,83,158,1) 0%,rgba(44,83,158,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(44,83,158,1) 0%,rgba(44,83,158,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c539e', endColorstr='#2c539e',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+.email {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 15px auto;
+    padding: 0px 15px;
+    text-align: center;
+    height: 20px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    margin: 15px auto;
+    padding: 0 15px;
+    border: 0;
+    height: 40px;
+    border-radius: 5px;
+    background: rgb(255,168,76); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(255,168,76,1) 0%, rgba(255,123,13,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(255,168,76,1) 0%,rgba(255,123,13,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(255,168,76,1) 0%,rgba(255,123,13,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=0 ); /* IE6-9 */
+    color: #fff;
+    font-family: "Anton";
+    font-size: 20px;
+}
+
+.section-head {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 36px;
+}
+
+.features {
+    width: 100%;
+    margin: auto;
+    list-style-type: none;
+}
+
+.features-img {
+    height: 100px;
+    width: 20%;
+    margin-right: 20px;
+}
+
+.features-info {
+    width: 45%;
+    font-size: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #fff;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
+.third-section {
+    padding-bottom: 200px;
+}
+
+@media only screen and (min-width:800px) {
+    .features-img{
+        width: 10%;
+    } 
+}
